@@ -1,0 +1,125 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterAdmin.master.cs" Inherits="MasterAdmin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+        .style3
+        {
+            font-family: "Adobe Caslon Pro";
+        }
+        .style4
+        {
+            width: 198px;
+        }
+        .style5
+        {
+            width: 667px;
+        }
+    </style>
+</head>
+<body background="backgrounds/new.jpg">
+    <form id="form1" runat="server">
+    <div>
+    </div>
+    <table cellpadding="3" cellspacing="0" class="style1">
+        <tr>
+            <td>
+                <table cellpadding="2" cellspacing="0" class="style1">
+                    <tr>
+                        <td class="style4">
+                                <asp:Image ID="Image6" runat="server" Height="100px" 
+                                    ImageUrl="~/images/LOcopy.jpg" Width="200px" />
+                            </td>
+                        <td style="text-align: right; font-weight: 700; font-size: large; color: #FFFFFF" 
+                            class="style5">
+                            <br />
+                            <br />
+                            <br />
+                            Welcome
+                            <asp:Label ID="labadmin" runat="server"></asp:Label>
+                        </td>
+                        <td style="text-align: left; font-weight: 700; font-size: large; color: #FFFFFF">
+                            <asp:Image ID="Image7" runat="server" Height="90px" Width="90px" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="style3" 
+                style="font-size: x-large; color: #FFFFFF; text-align: right">
+                <asp:HyperLink ID="HyperLink7" runat="server" style="font-size: medium">Home</asp:HyperLink>
+&nbsp;<asp:HyperLink ID="HyperLink8" runat="server" style="font-size: medium; color: #FFFFFF;" 
+                    NavigateUrl="~/home.aspx">LogOut</asp:HyperLink>
+&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="style3" 
+                style="font-size: x-large; color: #FFFFFF; text-align: right">
+                <hr style="color: #FFFFFF" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table cellpadding="5" cellspacing="0" class="style1">
+                    <tr>
+                        <td class="style2">
+                            <asp:HyperLink ID="HyperLink9" runat="server" 
+                                NavigateUrl="~/AddCar.aspx" style="color: #66CCFF">Add New Car</asp:HyperLink>
+                        </td>
+                        <td class="style2">
+                            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/ViewCarDetail.aspx" 
+                                style="color: #66CCFF; font-weight: 700">View Car Details</asp:HyperLink>
+                        </td>
+                        <td class="style2">
+                            <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/addCatagory.aspx" 
+                                style="color: #66CCFF; font-weight: 700">Add New Catagory</asp:HyperLink>
+                        </td>
+                        <td class="style2">
+                            <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/AddDriver.aspx" 
+                                style="color: #66CCFF; font-weight: 700">Add Driver Details</asp:HyperLink>
+                        </td>
+                        <td class="style2">
+                            <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/ViewDriverDetails.aspx" 
+                                style="color: #66CCFF; font-weight: 700">View Driver Details</asp:HyperLink>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <hr style="color: #FFFFFF" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        </table>
+    </form>
+    <table cellpadding="0" cellspacing="0" class="style1">
+        <tr>
+            <td bgcolor="#666666">
+                &nbsp;</td>
+        </tr>
+    </table>
+</body>
+</html>

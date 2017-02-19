@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMaster.master.cs" Inherits="UserMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {            text-align: right;
+        }
+        .style3
+        {
+            width: 198px;
+        }
+    </style>
+</head>
+<body background="backgrounds/Audi-A3_2013_1600x1200_wallpaper_34-1.jpg">
+    <form id="form1" runat="server">
+    <table class="style1">
+        <tr>
+            <td>
+                <table cellspacing="0" class="style1">
+                    <tr>
+                        <td class="style3">
+                            <asp:Image ID="Image1" runat="server" Height="150px" 
+                                ImageUrl="~/images/LOcopy.jpg" Width="314px" />
+                        </td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <hr style="color: #FFFFFF" />
+                <table cellpadding="7" cellspacing="0" class="style1">
+                    <tr>
+                        <td bgcolor="#666666" style="text-align: right; font-size: large">
+                            <table cellpadding="0" cellspacing="1" class="style1">
+                                <tr>
+                                    <td style="color: #FFFFFF">
+                                        <asp:Label ID="labuserid" runat="server" Visible="False"></asp:Label>
+                                        Welcome<asp:Label ID="labuser" runat="server"></asp:Label>
+                                        ,</td>
+                                </tr>
+                            </table>
+                            <asp:HyperLink ID="HyperLink3" runat="server" style="color: #CCCC00" 
+                                NavigateUrl="~/BookingCar.aspx">Book Ride</asp:HyperLink>
+&nbsp;
+                            <asp:HyperLink ID="HyperLink4" runat="server" style="color: #CCCC00">See History</asp:HyperLink>
+&nbsp;
+                            &nbsp;
+                            <asp:HyperLink ID="HyperLink6" runat="server" style="color: #CCCC00" 
+                                NavigateUrl="~/homeuser.aspx">Log Out</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#666666" style="text-align: right; font-size: large">
+                            <hr style="color: #FFFFFF" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style2">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style2" bgcolor="#666666">
+                            &nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div>
+    </div>
+    </form>
+</body>
+</html>
